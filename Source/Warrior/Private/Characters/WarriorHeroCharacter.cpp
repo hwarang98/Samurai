@@ -72,8 +72,7 @@ void AWarriorHeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 	checkf(PlayerInputComponent, TEXT("유효한 데이터 자산을 입력 구성으로 할당하는 것을 잊었습니다!"));
 	ULocalPlayer* LocalPlayer = GetController<APlayerController>()->GetLocalPlayer();
 
-	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<
-		UEnhancedInputLocalPlayerSubsystem>(LocalPlayer);
+	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(LocalPlayer);
 
 	check(Subsystem);
 

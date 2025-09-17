@@ -98,7 +98,7 @@ void UWarriorAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCal
 		PawnUIComponent->OnCurrentHealthChanged.Broadcast(GetCurrentHealth() / GetMaxHealth());
 
 		// 피니셔 가능 상태인지 확인
-		if (GetCurrentHealth() > 0.f && (GetCurrentHealth() / GetMaxHealth() <= 0.2f)) // 체력이 20% 이하일 때
+		if (GetCurrentHealth() > 0.f && (GetCurrentHealth() / GetMaxHealth() <= 0.30f)) // 체력이 20% 이하일 때
 		{
 			UWarriorFunctionLibrary::AddGameplayTagToActorIfNone(
 				Data.Target.GetAvatarActor(),

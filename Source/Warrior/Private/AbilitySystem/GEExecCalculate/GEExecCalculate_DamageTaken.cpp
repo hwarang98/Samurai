@@ -12,7 +12,7 @@ struct FWarriorDamageCapture
 	DECLARE_ATTRIBUTE_CAPTUREDEF(AttackPower)
 	DECLARE_ATTRIBUTE_CAPTUREDEF(DefensePower)
 	DECLARE_ATTRIBUTE_CAPTUREDEF(DamageTaken)
-
+	
 	FWarriorDamageCapture()
 	{
 		DEFINE_ATTRIBUTE_CAPTUREDEF(UWarriorAttributeSet, AttackPower, Source, false);

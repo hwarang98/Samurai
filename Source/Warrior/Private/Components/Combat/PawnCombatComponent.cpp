@@ -81,8 +81,6 @@ void UPawnCombatComponent::ToggleWeaponCollision(bool bShouldEnable, EToggleDama
 			OverlappedActors.Empty();
 		}
 	}
-
-
 }
 
 void UPawnCombatComponent::OnHitTargetActor(AActor* HitActor)
